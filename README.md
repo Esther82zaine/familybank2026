@@ -120,14 +120,27 @@ The application is built with:
 
 4. **Configuration**
 
-   - Update database connection settings in:
-     - `admin/conf/config.php`
-     - `staff/conf/config.php`
-     - `client/conf/config.php`
+   - Copy `config/database.local.example.php` to `config/database.local.php`.
+   - Set your database host, name, username, and password in `config/database.local.php`.
+   - The local file is excluded from Git and the `config` directory is blocked from direct web access.
 
 5. **Access the Application**
    - Open your web browser
    - Go to: `http://localhost/InternetBanking-PHP`
+
+---
+
+## cPanel deployment
+
+This application requires a PHP web host and MySQL; GitHub Pages cannot run it.
+
+1. In cPanel, create a MySQL database and database user, then grant the user privileges to that database.
+2. Upload the project source to your domain's document root (commonly `public_html`) using File Manager or the hosting provider's Git deployment feature. Do not upload archives containing login-details files.
+3. Import `DATABASE FILE/internetbanking.sql` into the database with phpMyAdmin.
+4. Copy `config/database.local.example.php` to `config/database.local.php` and enter the database host, name, username, and password assigned by cPanel. Keep this local file out of Git.
+5. Select a supported PHP version with the `mysqli` and `pdo_mysql` extensions enabled, then enable HTTPS for the domain.
+
+The public GitHub Pages site is informational only. This academic banking project is not suitable for real funds or real customer data; review and secure the application before exposing it to the internet.
 
 ---
 
