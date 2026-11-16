@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Overview and documentation for the Internet Banking System academic project.">
+  <title>Internet Banking System Project</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #172033;
+      background: #f3f6fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(100% - 2rem, 760px);
+      margin: 4rem auto;
+    }
+
+    header,
+    section {
+      padding: 2rem;
+      border: 1px solid #dce3ee;
+      border-radius: 1rem;
+      background: #fff;
+    }
+
+    section {
+      margin-top: 1rem;
+    }
+
+    h1,
+    h2,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: .5rem;
+      font-size: clamp(2rem, 6vw, 3rem);
+      line-height: 1.15;
+    }
+
+    .notice {
+      border-left: .35rem solid #b45309;
+      background: #fff7ed;
+    }
+
+    a {
+      color: #0759a5;
+      text-underline-offset: .2em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #0759a5;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 520px) {
+      main {
+        margin: 1rem auto;
+      }
+
+      header,
+      section {
+        padding: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p>Academic software project</p>
+      <h1>Internet Banking System</h1>
+      <p>An overview of a PHP and MySQL project that demonstrates common online banking workflows.</p>
+    </header>
+
+    <section class="notice" aria-labelledby="availability">
+      <h2 id="availability">Demo availability</h2>
+      <p>This GitHub Pages site is informational only. It does not run the PHP/MySQL application. Sign-in, accounts, deposits, withdrawals, transfers, and other banking functions are unavailable here.</p>
+      <p>Do not enter personal information, passwords, or real banking details on this page.</p>
+    </section>
+
+    <section aria-labelledby="features">
+      <h2 id="features">Project overview</h2>
+      <p>The source project includes separate customer, staff, and administrator areas, with a MySQL schema for accounts and transaction records. It is intended for local setup or deployment to a PHP-capable host with a configured database.</p>
+      <p><strong>Technologies:</strong> PHP, MySQL, HTML, CSS, JavaScript, and Bootstrap.</p>
+    </section>
+
+    <section aria-labelledby="resources">
+      <h2 id="resources">Project resources</h2>
+      <ul>
+        <li><a href="Internet_Banking_System_Documentation.docx">Download the system documentation</a></li>
+        <li><a href="https://github.com/Esther82zaine/familybank2026">View the source repository</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
