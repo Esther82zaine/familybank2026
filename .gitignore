@@ -1,0 +1,7 @@
+.env
+.env.*
+!.env.example
+*.log
+*.bak
+*.old
+**/01 LOGIN DETAILS & PROJECT INFO.txt
